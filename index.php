@@ -38,14 +38,14 @@
         <h1>Calculadora PHP 📱</h1>
         <form action="">
             <label for="num1">Primeiro Número</label>
-            <input type="number" name="num1" required>
+            <input type="number" name="num1" value=<?= $num1 ?> required>
             <label for="num2">Segundo Número</label>
-            <input type="number" name="num2" required>
+            <input type="number" name="num2" value=<?= $num2 ?>  required>
             <select name="calcular" id="">
-                <option value="somar">Somar</option>
-                <option value="subtrair">Subtrair</option>
-                <option value="multiplicar">Multiplicar</option>
-                <option value="dividir">Dividir</option>
+                <option value="somar" <?= ($operacao == "somar")? "Selected" : "" ?>>Somar</option>
+                <option value="subtrair" <?= ($operacao == "subtrair")? "Selected" : "" ?>>Subtrair</option>
+                <option value="multiplicar" <?= ($operacao == "multiplicar")? "Selected" : "" ?>>Multiplicar</option>
+                <option value="dividir" <?= ($operacao == "dividir")? "Selected" : "" ?>>Dividir</option>
             </select>
             <input type="submit" value="Calcular" class="botao">
             <p>O resultado da conta é <span id="valor"><?=$resultado ?></span></p>
