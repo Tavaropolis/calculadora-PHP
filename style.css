@@ -1,0 +1,79 @@
+:root {
+    --cor-fundo: #000000;
+    --cor-fonte: #EEEEEE;
+    --cor-container: #DC5F00;
+    --cor-botao: #CF0A0A;
+    --fonte-texto: 'Oswald', sans-serif;
+}
+
+* { 
+    box-sizing: border-box;
+    color: var(--cor-fonte); 
+    font-family: var(--fonte-texto);
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+.container {    
+    width: 600px;
+    height: 600px;
+    background-color: var(--cor-container);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 50px auto;
+    
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+form {
+    display: contents;
+}
+
+input, select, option {
+    color: var(--cor-fundo);
+}
+
+label {
+    margin-top: 20px;
+}
+
+input {
+    width: 200px;
+}
+
+select {
+    width: 200px;
+    height: 30px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.botao {
+    width: 200px;
+    height: 50px;
+    background-color: var(--cor-botao);
+    border-radius: 10px;
+    color: var(--cor-fonte); 
+    font-size: 1.2rem;
+    margin: 20px auto 20px;
+}
+
+.botao:hover {
+    background-color: var(--cor-botao);
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#valor {
+    font-weight: bold;
+}
