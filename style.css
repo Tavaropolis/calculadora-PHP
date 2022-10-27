@@ -2,7 +2,8 @@
     --cor-fundo: #000000;
     --cor-fonte: #EEEEEE;
     --cor-container: #DC5F00;
-    --cor-botao: #CF0A0A;
+    --cor-botao: #e61c1c;
+    --cor-botao-hover: #F23E3E;
     --fonte-texto: 'Oswald', sans-serif;
 }
 
@@ -67,7 +68,7 @@ select {
 }
 
 .botao:hover {
-    background-color: var(--cor-botao);
+    background-color: var(--cor-botao-hover);
 }
 
 p {
