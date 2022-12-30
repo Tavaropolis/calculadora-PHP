@@ -1,7 +1,7 @@
 <?php
-    $num1 = $_GET["num1"];
-    $num2 = $_GET["num2"];
-    $operacao = $_GET["calcular"];
+    $num1 = $_GET["num1"] ?? "";
+    $num2 = $_GET["num2"] ?? "";
+    $operacao = $_GET["calcular"] ?? "";
 
     switch($operacao) {
         case "somar": 
@@ -48,7 +48,7 @@
                 <option value="dividir" <?= ($operacao == "dividir")? "Selected" : "" ?>>Dividir</option>
             </select>
             <input type="submit" value="Calcular" class="botao">
-            <p>O resultado da conta é <span id="valor"><?=$resultado ?></span></p>
+            <p>O resultado da conta é <span id="valor"><?=$resultado ?? "" ?></span></p>
         </form>
     </div>
 </body>
